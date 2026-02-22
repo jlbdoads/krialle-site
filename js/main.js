@@ -18,6 +18,22 @@ document.addEventListener('DOMContentLoaded', () => {
     /* Mobile Menu Toggle */
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const nav = document.querySelector('.nav');
+    
+    // Create overlay
+    const overlay = document.createElement('div');
+    overlay.className = 'menu-overlay';
+    overlay.style.cssText = 'display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 98; background: rgba(0,0,0,0.5);';
+    document.body.appendChild(overlay);
+
+    function closeMenu() {
+        nav.classList.remove('nav-active');
+        const spans = mobileMenuBtn.querySelectorAll('span');
+        spans[0].style.transform = 'none';
+        spans[1].style.opacity = '1';
+        spans[2].style.transform = 'none';
+        nav.style.display = 'none';
+        overlay.style.display = 'none';
+    }
 
     if (mobileMenuBtn && nav) {
         mobileMenuBtn.addEventListener('click', () => {
@@ -40,11 +56,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 nav.style.backdropFilter = 'blur(15px)';
                 nav.style.padding = '2rem';
                 nav.style.borderBottom = '1px solid var(--ice-border)';
+                overlay.style.display = 'block';
             } else {
-                spans[0].style.transform = 'none';
-                spans[1].style.opacity = '1';
-                spans[2].style.transform = 'none';
-                nav.style.display = 'none';
+                closeMenu();
+            }
+        });
+        
+        // Close menu when clicking on overlay
+        overlay.addEventListener('click', closeMenu);
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (nav.classList.contains('nav-active') && !nav.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                closeMenu();
             }
         });
     }

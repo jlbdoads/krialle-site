@@ -840,11 +840,11 @@ a {
 
 @media (max-width: 768px) {
     .logo-img {
-        height: 120px !important;
+        height: 60px !important;
     }
 
     .footer-logo {
-        height: 120px !important;
+        height: 60px !important;
     }
 
     .mobile-menu-btn {
