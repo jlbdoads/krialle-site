@@ -847,6 +847,25 @@ a {
         height: 60px !important;
     }
 
+    /* Títulos principais com padding mobile */
+    .hero-title {
+        font-size: 2.5rem;
+        padding: 0 1rem;
+        text-align: left;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+
+    h1, h2, h3, .page-title {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     .mobile-menu-btn {
         display: flex;
     }
