@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krialle | Insights — Visão & Estratégia</title>
+    <meta name="description"
+        content="Artigos, análises de estratégias globais e visão de mercado pela equipe Krialle e nossa CEO, Aleska Milo.">
+    <link rel="icon" type="image/png" href="assets/icon-k.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .insights-section {
+            padding: 160px 0 100px;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .insights-content {
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .insights-content h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .insights-content p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+        }
+
+        .linkedin-teaser {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            background: rgba(10, 10, 10, 0.6);
+            backdrop-filter: blur(10px);
+            text-decoration: none;
+            color: var(--ice);
+            transition: all var(--transition-smooth);
+        }
+
+        .linkedin-teaser:hover {
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+            background: rgba(20, 20, 20, 0.8);
+        }
+
+        .linkedin-teaser svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        /* Ambient subtle glow for this page */
+        .insights-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(237, 242, 244, 0.05) 0%, transparent 70%);
+            filter: blur(40px);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        @media (max-width: 768px) {
+            .insights-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .insights-content p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="glow-bg"></div>
+    <div class="grain-overlay"></div>
+    <div class="k-watermark" aria-hidden="true">k</div>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo-krialle.png" alt="Krialle" class="logo-img">
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="sobre.html" class="nav-link">Sobre</a>
+            <a href="portfolio.html" class="nav-link">Portfólio</a>
+            <a href="insights.html" class="nav-link active">Insights</a>
+            <a href="contato.html" class="nav-link btn-contact">Fale Conosco</a>
+        </nav>
+        <button class="mobile-menu-btn"><span></span><span></span><span></span></button>
+    </header>
+
+    <main>
+        <section class="insights-section container">
+            <div class="insights-glow"></div>
+            <div class="insights-content">
+                <span class="badge">Em Breve</span>
+                <h1>O cérebro por trás da <span class="highlight">Estratégia</span>.</h1>
+                <p>
+                    Estamos preparando um espaço dedicado à inteligência de mercado.
+                    Aqui você encontrará artigos profundos, análises de táticas globais e a visão da nossa CEO sobre o
+                    futuro do marketing e posicionamento de marcas.
+                </p>
+
+                <a href="#linkedin" class="linkedin-teaser"
+                    onclick="alert('Em breve: Conexão direta com o feed do LinkedIn da Aleska Milo.')">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                    Acompanhe as ideias no LinkedIn
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="assets/logo-krialle.png" alt="Krialle" class="logo-img footer-logo">
+                <p>A parceira estratégica que transforma marcas em referência. Full marketing para empresas e marcas
+                    pessoais.</p>
+                <div class="social-links" style="margin-top: 1.5rem;">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="LinkedIn">IN</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="portfolio.html">Portfólio</a>
+                <a href="insights.html">Insights</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Fale Conosco</h4>
+                <a href="mailto:contato@krialle.com.br"
+                    style="color:var(--text-muted); font-size:0.95rem;">contato@krialle.com.br</a>
+                <p style="margin-top:1.5rem; font-size:0.8rem; color:var(--text-muted); line-height:1.7;">
+                    Av. Américo Belay, 1158, Sobreloja<br>
+                    Jd. Imperial · Maringá - PR<br>
+                    CEP 87023-000
+                </p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.5!2d-51.9378!3d-23.4305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd0f1a5d68b73%3A0x0!2sAv.+Am%C3%A9rico+Belay%2C+1158%2C+Maring%C3%A1+-+PR!5e0!3m2!1spt!2sbr!4v1708000000000!5m2!1spt!2sbr"
+                    width="100%" height="130"
+                    style="border:0; border-radius:8px; margin-top:0.8rem; filter:grayscale(1) brightness(0.35) invert(0.05);"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    title="Krialle — Localização Maringá">
+                </iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Krialle Full Marketing. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

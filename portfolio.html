@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krialle | Portfólio — Cases de Alta Performance</title>
+    <meta name="description"
+        content="Conheça os cases da Krialle: marcas que foram percebidas, lembradas e escolhidas com nossa estratégia de full marketing.">
+    <link rel="icon" type="image/png" href="assets/icon-k.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .portfolio-header {
+            padding-top: 150px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+
+        .portfolio-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0 6rem;
+        }
+
+        .portfolio-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #111;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+            filter: grayscale(80%) brightness(0.7);
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.05);
+            filter: grayscale(0%) brightness(1);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 2rem;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+            transform: translateY(20px);
+            opacity: 0;
+            transition: all 0.4s ease;
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .portfolio-overlay h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .portfolio-category {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--ice);
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="glow-bg"></div>
+    <div class="grain-overlay"></div>
+    <div class="k-watermark" aria-hidden="true">k</div>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo-krialle.png" alt="Krialle" class="logo-img">
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="sobre.html" class="nav-link">Sobre</a>
+            <a href="portfolio.html" class="nav-link active">Portfólio</a>
+            <a href="insights.html" class="nav-link">Insights</a>
+            <a href="contato.html" class="nav-link btn-contact">Fale Conosco</a>
+        </nav>
+        <button class="mobile-menu-btn"><span></span><span></span><span></span></button>
+    </header>
+
+    <main>
+        <section class="portfolio-header container">
+            <span class="badge">Cases</span>
+            <h1>Nossos <span class="highlight">Cases</span></h1>
+            <p style="color:var(--text-muted);">Resultados estéticos que escalam negócios reais.</p>
+        </section>
+
+        <section class="container portfolio-grid">
+            <div class="portfolio-item">
+                <div style="width:100%; height:100%; background: linear-gradient(45deg, #1a1a1a, #2a2a2a);"></div>
+                <div class="portfolio-overlay">
+                    <span class="portfolio-category">Branding</span>
+                    <h3>ELA$ — Identidade Visual</h3>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div style="width:100%; height:100%; background: linear-gradient(45deg, #0a0a0a, #333);"></div>
+                <div class="portfolio-overlay">
+                    <span class="portfolio-category">Full Marketing</span>
+                    <h3>Getsêmani — Estratégia</h3>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div style="width:100%; height:100%; background: linear-gradient(45deg, #222, #444);"></div>
+                <div class="portfolio-overlay">
+                    <span class="portfolio-category">Personal Brand</span>
+                    <h3>Vanessa Oliveira</h3>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div style="width:100%; height:100%; background: linear-gradient(45deg, #111, #2b2b2b);"></div>
+                <div class="portfolio-overlay">
+                    <span class="portfolio-category">Performance</span>
+                    <h3>Gratta Contábil</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="assets/logo-krialle.png" alt="Krialle" class="logo-img footer-logo">
+                <p>A parceira estratégica que transforma marcas em referência. Full marketing para empresas e marcas
+                    pessoais.</p>
+                <div class="social-links" style="margin-top: 1.5rem;">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="LinkedIn">IN</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="portfolio.html">Portfólio</a>
+                <a href="insights.html">Insights</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Fale Conosco</h4>
+                <a href="mailto:contato@krialle.com.br"
+                    style="color:var(--text-muted); font-size:0.95rem;">contato@krialle.com.br</a>
+                <p style="margin-top:1.5rem; font-size:0.8rem; color:var(--text-muted); line-height:1.7;">
+                    Av. Américo Belay, 1158, Sobreloja<br>
+                    Jd. Imperial · Maringá - PR<br>
+                    CEP 87023-000
+                </p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.5!2d-51.9378!3d-23.4305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd0f1a5d68b73%3A0x0!2sAv.+Am%C3%A9rico+Belay%2C+1158%2C+Maring%C3%A1+-+PR!5e0!3m2!1spt!2sbr!4v1708000000000!5m2!1spt!2sbr"
+                    width="100%" height="130"
+                    style="border:0; border-radius:8px; margin-top:0.8rem; filter:grayscale(1) brightness(0.35) invert(0.05);"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    title="Krialle — Localização Maringá">
+                </iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Krialle Full Marketing. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

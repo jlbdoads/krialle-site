@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krialle | Sobre Nós — Parceira Estratégica de Negócios</title>
+    <meta name="description"
+        content="Conheça a Krialle: a parceira estratégica que entende a essência de cada marca e a transforma em referência no mercado.">
+    <link rel="icon" type="image/png" href="assets/icon-k.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-hero {
+            padding: 160px 0 80px;
+        }
+
+        .about-hero h1 {
+            font-size: 3.2rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-promise {
+            padding: 5rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .about-promise-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            align-items: center;
+        }
+
+        .about-promise h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-promise p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.2rem;
+        }
+
+        .about-promise p strong {
+            color: var(--ice);
+            font-weight: 600;
+        }
+
+        .about-ceo {
+            background: linear-gradient(135deg, rgba(237, 242, 244, 0.05), rgba(237, 242, 244, 0.02));
+            border: 1px solid var(--ice-border);
+            border-radius: 16px;
+            padding: 3rem;
+        }
+
+        .about-ceo-name {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .about-ceo-title {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-ceo p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.7;
+            font-style: italic;
+        }
+
+        .pillars-section {
+            padding: 6rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1.5rem;
+            margin-top: 4rem;
+        }
+
+        .pillar-card {
+            padding: 2rem 1.5rem;
+            border-left: 2px solid var(--ice-border);
+            background: linear-gradient(90deg, rgba(237, 242, 244, 0.03), transparent);
+            transition: all var(--transition-smooth);
+        }
+
+        .pillar-card:hover {
+            border-left-color: var(--ice);
+            background: linear-gradient(90deg, rgba(237, 242, 244, 0.07), transparent);
+        }
+
+        .pillar-number {
+            font-family: var(--font-heading);
+            font-size: 0.7rem;
+            letter-spacing: 3px;
+            color: var(--text-muted);
+            margin-bottom: 0.8rem;
+        }
+
+        .pillar-card h3 {
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        .pillar-card p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 992px) {
+            .about-promise-inner {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .pillars-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .about-hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .pillars-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="glow-bg"></div>
+    <div class="grain-overlay"></div>
+    <div class="k-watermark" aria-hidden="true">k</div>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo-krialle.png" alt="Krialle" class="logo-img">
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="sobre.html" class="nav-link active">Sobre</a>
+            <a href="portfolio.html" class="nav-link">Portfólio</a>
+            <a href="insights.html" class="nav-link">Insights</a>
+            <a href="contato.html" class="nav-link btn-contact">Fale Conosco</a>
+        </nav>
+        <button class="mobile-menu-btn"><span></span><span></span><span></span></button>
+    </header>
+
+    <main>
+        <section class="about-hero container">
+            <span class="badge">Quem Somos</span>
+            <h1>Não somos uma agência.<br>Somos sua <span class="highlight">Parceira Estratégica</span>.</h1>
+            <p style="color: var(--text-muted); font-size: 1.2rem; max-width: 580px;">Entendemos a essência de cada
+                marca e a transformamos em referência no mercado. Isso é o que a Krialle faz — e faz com maestria.</p>
+        </section>
+
+        <section class="about-promise">
+            <div class="container about-promise-inner">
+                <div>
+                    <h2>Nossa Promessa</h2>
+                    <p>A Krialle nasceu da convicção de que as marcas merecem mais do que um fornecedor. Elas merecem um
+                        <strong>parceiro estratégico</strong> que pensa junto, age com visão e entrega com cuidado.
+                    </p>
+                    <p>Atuamos com duas frentes de alto nível: <strong>Krialle for Business</strong>, dedicado a
+                        empresas que querem dominância de mercado, e <strong>Krialle for Personal Brands</strong>, para
+                        profissionais e empreendedores que constroem autoridade com autenticidade.</p>
+                    <p>A estratégia não termina após a entrega. Somos presença constante — <strong>prazos são
+                            sagrados</strong> e o seu crescimento é o nosso comprometimento.</p>
+                </div>
+                <div class="about-ceo">
+                    <p class="about-ceo-name">ALESKA MILO</p>
+                    <p class="about-ceo-title">CEO &amp; Fundadora</p>
+                    <p>"Posicionar uma marca não é apenas estar presente. É decidir como ela será percebida, lembrada e
+                        escolhida. Na Krialle, esse é o nosso ponto de partida — não o destino."</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pillars-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nossa Cultura</h2>
+                    <p>Os cinco pilares que guiam cada entrega, cada estratégia, cada parceria.</p>
+                </div>
+                <div class="pillars-grid">
+                    <div class="pillar-card">
+                        <p class="pillar-number">01</p>
+                        <h3>Proatividade</h3>
+                        <p>Antecipamos necessidades antes que elas se tornem problemas.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <p class="pillar-number">02</p>
+                        <h3>Visão Estratégica</h3>
+                        <p>Olhar além do óbvio para encontrar o caminho que gera resultado real.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <p class="pillar-number">03</p>
+                        <h3>Cuidado com Detalhes</h3>
+                        <p>A excelência mora nos detalhes que outros ignoram.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <p class="pillar-number">04</p>
+                        <h3>Prazos São Sagrados</h3>
+                        <p>Comprometimento é inegociável. Entregamos o que prometemos, quando prometemos.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <p class="pillar-number">05</p>
+                        <h3>Espírito de Dono</h3>
+                        <p>Tratamos cada projeto como se fosse nosso próprio negócio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="assets/logo-krialle.png" alt="Krialle" class="logo-img footer-logo">
+                <p>A parceira estratégica que transforma marcas em referência. Full marketing para empresas e marcas
+                    pessoais.</p>
+                <div class="social-links" style="margin-top: 1.5rem;">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="LinkedIn">IN</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="portfolio.html">Portfólio</a>
+                <a href="insights.html">Insights</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Fale Conosco</h4>
+                <a href="mailto:contato@krialle.com.br"
+                    style="color:var(--text-muted); font-size:0.95rem;">contato@krialle.com.br</a>
+                <p style="margin-top:1.5rem; font-size:0.8rem; color:var(--text-muted); line-height:1.7;">
+                    Av. Américo Belay, 1158, Sobreloja<br>
+                    Jd. Imperial · Maringá - PR<br>
+                    CEP 87023-000
+                </p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.5!2d-51.9378!3d-23.4305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd0f1a5d68b73%3A0x0!2sAv.+Am%C3%A9rico+Belay%2C+1158%2C+Maring%C3%A1+-+PR!5e0!3m2!1spt!2sbr!4v1708000000000!5m2!1spt!2sbr"
+                    width="100%" height="130"
+                    style="border:0; border-radius:8px; margin-top:0.8rem; filter:grayscale(1) brightness(0.35) invert(0.05);"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    title="Krialle — Localização Maringá">
+                </iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Krialle Full Marketing. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krialle | Contato — Inicie Sua Parceria</title>
+    <meta name="description"
+        content="Pronto para transformar sua marca em referência? Entre em contato com a Krialle e inicie sua parceria estratégica.">
+    <link rel="icon" type="image/png" href="assets/icon-k.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-section {
+            padding: 150px 0 100px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+        }
+
+        .contact-info h1 {
+            font-size: 3rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .contact-details {
+            margin-top: 3rem;
+            border-top: 1px solid var(--ice-border);
+            padding-top: 2rem;
+        }
+
+        .contact-item {
+            margin-bottom: 2rem;
+        }
+
+        .contact-item h4 {
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            font-family: var(--font-heading);
+            font-weight: 400;
+        }
+
+        .contact-item p {
+            font-size: 1.2rem;
+            font-family: var(--font-body);
+            color: var(--ice);
+            font-weight: 500;
+        }
+
+        /* Tipo de Cliente: Radio buttons estilizados */
+        .client-type {
+            margin-bottom: 2rem;
+        }
+
+        .client-type label {
+            display: block;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 0.8rem;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .radio-option {
+            flex: 1;
+        }
+
+        .radio-option input {
+            display: none;
+        }
+
+        .radio-option span {
+            display: block;
+            text-align: center;
+            padding: 0.8rem;
+            border: 1px solid var(--ice-border);
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            transition: all var(--transition-fast);
+        }
+
+        .radio-option input:checked+span {
+            background: rgba(237, 242, 244, 0.15);
+            border-color: var(--ice);
+            color: var(--ice);
+        }
+
+        .radio-option span:hover {
+            border-color: var(--ice);
+        }
+
+        .contact-form {
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--ice-border);
+            padding: 3.5rem;
+            border-radius: 16px;
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.6rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .form-control {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+            padding: 0.8rem 0;
+            color: var(--ice);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-bottom-color: var(--ice);
+        }
+
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.15);
+        }
+
+        select.form-control {
+            background: rgba(10, 10, 10, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            padding: 0.8rem 1rem;
+            cursor: pointer;
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        @media (max-width: 992px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .contact-form {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="glow-bg"></div>
+    <div class="grain-overlay"></div>
+    <div class="k-watermark" aria-hidden="true">k</div>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo-krialle.png" alt="Krialle" class="logo-img">
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="sobre.html" class="nav-link">Sobre</a>
+            <a href="portfolio.html" class="nav-link">Portfólio</a>
+            <a href="insights.html" class="nav-link">Insights</a>
+            <a href="contato.html" class="nav-link active btn-contact">Fale Conosco</a>
+        </nav>
+        <button class="mobile-menu-btn"><span></span><span></span><span></span></button>
+    </header>
+
+    <main class="contact-section">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <span class="badge">Fale Conosco</span>
+                <h1>Pronto para ser <span class="highlight">percebido, lembrado e escolhido</span>?</h1>
+                <p>Preencha o formulário ao lado. Nossa equipe entrará em contato em até 24 horas para iniciarmos a
+                    conversa mais importante para o futuro da sua marca.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <h4>E-mail</h4>
+                        <p><a href="mailto:contato@krialle.com.br" style="color:var(--ice);">contato@krialle.com.br</a>
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>WhatsApp Estratégico</h4>
+                        <p>+55 (11) 90000-0000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <!-- Tipo de cliente: novo campo baseado nas duas frentes da Krialle -->
+                    <div class="client-type">
+                        <label>Você é:</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="tipo" value="empresa" checked>
+                                <span>Empresa (Business)</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="tipo" value="personal">
+                                <span>Marca Pessoal</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Nome Completo</label>
+                        <input type="text" class="form-control" placeholder="Como devemos te chamar?">
+                    </div>
+                    <div class="form-group">
+                        <label>E-mail</label>
+                        <input type="email" class="form-control" placeholder="seu@email.com.br">
+                    </div>
+                    <div class="form-group">
+                        <label>Em que podemos ajudar?</label>
+                        <select class="form-control">
+                            <option>Branding &amp; Estratégia de Marca</option>
+                            <option>Identidade Visual &amp; Design</option>
+                            <option>Social Media &amp; Conteúdo</option>
+                            <option>Tráfego Pago &amp; Performance</option>
+                            <option>Direção Criativa &amp; Audiovisual</option>
+                            <option>Full Marketing (Assessoria Completa)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Conte sobre seu negócio</label>
+                        <textarea class="form-control"
+                            placeholder="Em que momento seu negócio está? Qual é o maior desafio da sua marca hoje?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Enviar &amp;
+                        Iniciar Parceria</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="assets/logo-krialle.png" alt="Krialle" class="logo-img footer-logo">
+                <p>A parceira estratégica que transforma marcas em referência. Full marketing para empresas e marcas
+                    pessoais.</p>
+                <div class="social-links" style="margin-top: 1.5rem;">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="LinkedIn">IN</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="portfolio.html">Portfólio</a>
+                <a href="insights.html">Insights</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Fale Conosco</h4>
+                <a href="mailto:contato@krialle.com.br"
+                    style="color:var(--text-muted); font-size:0.95rem;">contato@krialle.com.br</a>
+                <p style="margin-top:1.5rem; font-size:0.8rem; color:var(--text-muted); line-height:1.7;">
+                    Av. Américo Belay, 1158, Sobreloja<br>
+                    Jd. Imperial · Maringá - PR<br>
+                    CEP 87023-000
+                </p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.5!2d-51.9378!3d-23.4305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd0f1a5d68b73%3A0x0!2sAv.+Am%C3%A9rico+Belay%2C+1158%2C+Maring%C3%A1+-+PR!5e0!3m2!1spt!2sbr!4v1708000000000!5m2!1spt!2sbr"
+                    width="100%" height="130"
+                    style="border:0; border-radius:8px; margin-top:0.8rem; filter:grayscale(1) brightness(0.35) invert(0.05);"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    title="Krialle — Localização Maringá">
+                </iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Krialle Full Marketing. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
